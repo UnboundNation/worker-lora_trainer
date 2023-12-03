@@ -113,7 +113,7 @@ def handler(job):
     "caption_extension": ".txt",
     "enable_bucket": True,
     "gradient_checkpointing": True,
-    "full_fp16": False,
+    "full_fp16": True, #Adjusted for fp16
     "no_token_padding": False,
     "stop_text_encoder_training_pct": 0,
     "min_bucket_reso": 256,
