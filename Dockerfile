@@ -31,6 +31,6 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 # Add src files (Worker Template)
 ADD src /kohya_ss
 
-WORKDIR /kohya_ss
+
 
 CMD python3 -u handler.py
