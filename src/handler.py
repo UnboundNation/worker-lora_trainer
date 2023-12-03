@@ -10,8 +10,9 @@ from runpod.serverless.utils import rp_download, upload_file_to_bucket
 from rp_schema import INPUT_SCHEMA
 
 
-blip_caption_weights = "/Users/jannisbaule/www/worker-lora_trainer/model_cache/model_large_caption.pth"
-sdxl_base_location = "/Users/jannisbaule/www/worker-lora_trainer/model_cache/sd_xl_base_1.0.safetensors"
+blip_caption_weights = os.path.abspath("model_cache/model_large_caption.pth")
+sdxl_base_location = os.path.abspath("model_cache/sd_xl_base_1.0.safetensors")
+
 def handler(job):
 
     job_input = job['input']
