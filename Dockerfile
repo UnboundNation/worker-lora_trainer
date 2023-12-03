@@ -22,14 +22,14 @@ RUN bash /setup.sh
 # Install Python dependencies (Worker Template)
 COPY builder/requirements.txt /requirements.txt
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install --upgrade pip && \
-    pip install --upgrade torch>=2.0.1+cu118 torchvision>=0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118 --no-cache-dir && \
-    pip install --upgrade setuptools && \
-    pip install --upgrade -r /requirements.txt --no-cache-dir && \
+    python3.10 pip install --upgrade pip && \
+    python3.10 pip install --upgrade torch torchvision --extra-index-url https://download.pytorch.org/whl/cu118 --no-cache-dir && \
+    python3.10 pip install --upgrade setuptools && \
+    python3.10 pip install --upgrade -r /requirements.txt --no-cache-dir && \
     rm /requirements.txt
 
 # Add src files (Worker Template)
 ADD /src /src
 
 
-CMD python3 -u handler.py
+CMD python3.10 -u handler.py
