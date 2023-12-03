@@ -66,7 +66,7 @@ def handler(job):
                     flat_directory
                 )
 
-    subprocess.run(f"""python3 "finetune/make_captions.py" \
+    subprocess.run(f"""python3.10 "finetune/make_captions.py" \
             --batch_size="1" \
             --num_beams="1" \
             --top_p="0.9" \
