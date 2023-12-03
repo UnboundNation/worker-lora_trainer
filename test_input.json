@@ -1,0 +1,20 @@
+{
+    "input": {
+        "zip_url": "https://tmpfiles.org/dl/3288849/archiv.zip",
+        "instance_name": "TOK",
+        "class_name": "woman",
+        "unet_lr": 0.0003,
+        "network_dim": 256,
+        "lr_scheduler_num_cycles": 1,
+        "learning_rate": 0.0003,
+        "lr_scheduler": "constant",
+        "lr_warmup_steps": 0,
+        "train_batch_size": 1,
+        "max_train_steps": 5000,
+        "mixed_precision": "bf16",
+        "save_precision": "bf16",
+        "optimizer_type": "Adafactor",
+        "max_data_loader_num_workers": 0,
+        "steps": 30
+    }
+}
