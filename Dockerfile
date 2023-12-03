@@ -21,6 +21,7 @@ RUN bash /setup.sh
 
 # Install Python dependencies (Worker Template)
 COPY builder/requirements.txt /requirements.txt
+RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 RUN --mount=type=cache,target=/root/.cache/pip \
     python3.10 -m pip install --upgrade pip && \
     python3.10 -m pip install --upgrade torch torchvision --extra-index-url https://download.pytorch.org/whl/cu118 --no-cache-dir && \
