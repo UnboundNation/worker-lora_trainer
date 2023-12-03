@@ -30,7 +30,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
     rm /requirements.txt
 
 # Add src files (Worker Template)
-ADD /src /src
+ADD /src /logs
 
 
 CMD python3.10 -u handler.py
