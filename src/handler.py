@@ -23,7 +23,6 @@ def handler(job):
     # Download the zip file
     downloaded_input = rp_download.file(job_input['zip_url'])
     if os.path.exists('./training'):
-        import shutil
         shutil.rmtree('./training')
 
     if not os.path.exists('./training'):
