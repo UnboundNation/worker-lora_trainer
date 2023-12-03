@@ -1,6 +1,10 @@
 # Base image
 FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu20.04
 
+LABEL org.opencontainers.image.source=https://github.com/UnboundNation/worker-lora_trainer
+
+
+
 # Use bash shell with pipefail option
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
