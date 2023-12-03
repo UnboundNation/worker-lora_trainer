@@ -94,8 +94,8 @@ def handler(job):
                 --train_batch_size="1" \
                 --max_train_steps="3000" \
                 --save_every_n_epochs="1" \
-                --mixed_precision="bf16" \
-                --save_precision="bf16" \
+                --mixed_precision="fp16" \
+                --save_precision="fp16" \
                 --caption_extension=".txt" \
                 --cache_latents \
                 --cache_latents_to_disk \
