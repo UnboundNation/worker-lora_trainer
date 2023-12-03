@@ -1,0 +1,5 @@
+.venv/*
+model_cache/*
+!model_cache/.gitignore
+kohya_ss/*
+job_files/*
