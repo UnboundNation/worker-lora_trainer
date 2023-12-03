@@ -14,8 +14,9 @@ git clone https://github.com/bmaltais/kohya_ss.git && \
     git checkout 17f58c8bb9bc38773a870df58e1ae788abf6753b
 
 # Cache models
-mkdir model_cache
+
 
 #Only if not present already
+#mkdir model_cache
 #wget https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors -P model_cache
 #wget https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_large_caption.pth -P model_cache
